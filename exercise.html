@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<center><h2 style="color: orangered">YÊU KHÔNG</h2></center>
+<center>
+    <table>
+        <tr>
+            <td><input type="button" value="YES" onclick="yes()"></td>
+            <td><input type="button" value="NO-'nhấn được thì ok không yêu'" id="no" onmouseover="noHover()"
+                       style="position: absolute; left:360px; top:235px"></td>
+        </tr>
+    </table>
+</center>
+<script>
+    function yes() {
+        alert("Mình cũng vậy, hihi <3");
+    }
+
+    function noHover() {
+        let a = document.getElementById("no");
+
+        a.style.left = (Math.random() * window.innerWidth) + 'px';
+        a.style.top = (Math.random() * window.innerHeight) + 'px';
+    }
+</script>
+</body>
+</html>
